@@ -1,16 +1,15 @@
 {
   "name": "sandbox-es6",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "sandbox es6(2015)",
   "main": "",
   "scripts": {
-    "start": "npm run serve & npm run watch",
-    "build": "browserify src/basic.es6 --debug --transform babelify --outfile lib/basic.js",
+    "start": "parallelshell 'npm run serve' 'npm run build' 'npm run watch'",
+    "build": "watchify ./src/basic.es6 --debug --transform babelify --outfile 'exorcist ./lib/basic.js.map > ./lib/basic.js' --verbose",
     "lint": "eslint src/**/*.es6",
     "serve": "serve -p 3000 .",
-    "watch:build": "watch 'npm run build' src/",
     "watch:lint": "watch 'npm run lint' src/",
-    "watch": "npm run watch:build & npm run watch:lint",
+    "watch": "npm run watch:lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -30,7 +29,10 @@
     "browserify": "^13.0.0",
     "eslint": "^2.7.0",
     "eslint-config-google": "^0.4.0",
+    "exorcist": "^0.4.0",
+    "parallelshell": "^2.0.0",
     "serve": "^1.4.0",
-    "watch": "^0.17.1"
+    "watch": "^0.17.1",
+    "watchify": "^3.7.0"
   }
 }
