@@ -3,7 +3,7 @@
 ## Installation
 
 ```
-% git clone git@github.com:DriftwoodJP/sandbox-es6.git && cd $_
+% git clone git@github.com:DriftwoodJP/sandbox-es6.git your-project && cd $_
 % npm install
 ```
 

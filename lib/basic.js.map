@@ -2,8 +2,8 @@
   "version": 3,
   "sources": [
     "node_modules/browser-pack/_prelude.js",
-    "src/basic.es6",
-    "src/math.es6"
+    "src/basic.es6.js",
+    "src/math.es6.js"
   ],
   "names": [],
   "mappings": "AAAA;ACAA;;AASA;;IAAY;;;;AAPZ,IAAI,MAAM,SAAN;AACJ,IAAI,GAAJ,EAAS;AACP,MAAI,OAAM,SAAN,CADG;AAEP,WAAS,KAAT,aAAyB,UAAzB,EAFO;CAAT;AAIA,QAAQ,GAAR,aAAsB,SAAtB;;AAGA,QAAQ,GAAR,CAAY,UAAU,KAAK,GAAL,CAAS,KAAK,EAAL,EAAS,KAAK,EAAL,CAA5B,CAAZ;;;;;;;;QCJgB;;;;;;;AAAT,SAAS,GAAT,CAAa,CAAb,EAAgB,CAAhB,EAAmB;AACxB,SAAO,IAAI,CAAJ,CADiB;CAAnB;;AAIA,IAAI,kBAAK,QAAL",
