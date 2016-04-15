@@ -22,17 +22,17 @@ Lifecycle scripts included in sandbox-es6:
   start
     parallelshell 'npm run serve' 'npm run build' 'npm run watch'
   test
-    echo "Error: no test specified" && exit 1
+    mocha --compilers js:espower-babel/guess test/**/*.test.js
 
 available via `npm run-script`:
   build
-    watchify ./src/basic.es6 --debug --transform babelify --outfile 'exorcist ./lib/basic.js.map > ./lib/basic.js' --verbose
+    watchify ./src/basic.es6.js --debug --transform babelify --outfile 'exorcist ./lib/basic.js.map > ./lib/basic.js' --verbose
+  doc
+    esdoc -c .esdoc.json
   lint
-    eslint src/**/*.es6
+    eslint src/**/*.es6.js test/**/*.test.js
   serve
     serve -p 3000 .
-  watch:lint
-    watch 'npm run lint' src/
   watch
-    npm run watch:lint
+    watch 'npm run lint && npm run test' src/ test/
 ```
