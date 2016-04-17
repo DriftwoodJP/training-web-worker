@@ -1,6 +1,6 @@
-const assert = require('power-assert');
+const assert = require('assert');
 import * as Math from '../src/lib/math.es6.js';
-// let Math = require('../src/lib/math.es6.js');
+// const Math = require('../src/lib/math.es6.js');
 
 /** @test {Math} */
 describe('Math', () => {
@@ -12,8 +12,17 @@ describe('Math', () => {
   });
   /** @test {sum} */
   describe('sum', () => {
-    it('1 + 2 の合計は 3 である', () => {
-      assert(Math.sum(1, 2) === 3);
+    it('should return x + y', () => {
+      const result = Math.sum(1, 2);
+      assert(result === 3);
     });
+    // it('arguments should be type of number', () => {
+    //   try {
+    //     Math.sum('String1', 'String2');
+    //     throw new Error("unreachable line");
+    //   } catch (error) {
+    //     assert.equal(error.name, assert.AssertionError.name);
+    //   }
+    // });
   });
 });

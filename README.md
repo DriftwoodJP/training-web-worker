@@ -22,7 +22,7 @@ Lifecycle scripts included in sandbox-es6:
   start
     parallelshell 'npm run serve' 'npm run build' 'npm run watch'
   test
-    mocha --compilers js:espower-babel/guess test/**/*.test.js
+    mocha test/**/*.test.js
 
 available via `npm run-script`:
   build
