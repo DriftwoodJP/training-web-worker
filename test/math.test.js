@@ -1,6 +1,6 @@
-const assert = require('power-assert');
+const assert = require('assert');
 import * as Math from '../src/lib/math.es6.js';
-// let Math = require('../src/lib/math.es6.js');
+// const Math = require('../src/lib/math.es6.js');
 
 /** @test {Math} */
 describe('Math', () => {

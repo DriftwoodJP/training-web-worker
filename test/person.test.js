@@ -1,6 +1,6 @@
-const assert = require('power-assert');
+const assert = require('assert');
 import * as myClass from '../src/lib/person.es6.js';
-// let myClass = require('../src/lib/person.es6.js');
+// const myClass = require('../src/lib/person.es6.js');
 
 /** @test {Person} */
 describe('Person', () => {
