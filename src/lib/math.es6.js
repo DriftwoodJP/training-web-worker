@@ -1,14 +1,18 @@
 /**
  * lib/math description.
  */
+'use strict';
+// const assert = require('assert');
 
 /**
  * Adds two numbers together.
- * @param {int} x The first number.
- * @param {int} y The second number.
- * @return {int} The sum of the two numbers.
+ * @param {number} x The first number.
+ * @param {number} y The second number.
+ * @return {Number} The sum of the two numbers.
  */
 export function sum(x, y) {
+  // assert(typeof x === 'number');
+  // assert(typeof y === 'number');
   return x + y;
 }
 

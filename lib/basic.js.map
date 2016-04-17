@@ -6,12 +6,12 @@
     "src/lib/math.es6.js"
   ],
   "names": [],
-  "mappings": "AAAA;ACAA;;AASA;;IAAY;;;;AAPZ,IAAI,MAAM,SAAN;AACJ,IAAI,GAAJ,EAAS;AACP,MAAI,OAAM,SAAN,CADG;AAEP,WAAS,KAAT,aAAyB,UAAzB,EAFO;CAAT;AAIA,QAAQ,GAAR,aAAsB,SAAtB;;AAGA,QAAQ,GAAR,CAAY,UAAU,KAAK,GAAL,CAAS,KAAK,EAAL,EAAS,KAAK,EAAL,CAA5B,CAAZ;;;;;;;;QCAgB;;;;;;;;;;;AAAT,SAAS,GAAT,CAAa,CAAb,EAAgB,CAAhB,EAAmB;AACxB,SAAO,IAAI,CAAJ,CADiB;CAAnB;;;;;;AAQA,IAAI,kBAAK,QAAL",
+  "mappings": "AAAA;ACAA;;AASA;;IAAY;;;;AAPZ,IAAI,MAAM,SAAN;AACJ,IAAI,GAAJ,EAAS;AACP,MAAI,OAAM,SAAN,CADG;AAEP,WAAS,KAAT,aAAyB,UAAzB,EAFO;CAAT;AAIA,QAAQ,GAAR,aAAsB,SAAtB;;AAGA,QAAQ,GAAR,CAAY,UAAU,KAAK,GAAL,CAAS,KAAK,EAAL,EAAS,KAAK,EAAL,CAA5B,CAAZ;;;;;;ACPA;;;;;;;;;;;;;QASgB;AAAT,SAAS,GAAT,CAAa,CAAb,EAAgB,CAAhB,EAAmB;;;AAGxB,SAAO,IAAI,CAAJ,CAHiB;CAAnB;;;;;;AAUA,IAAI,kBAAK,QAAL",
   "file": "generated.js",
   "sourceRoot": "",
   "sourcesContent": [
     "(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require==\"function\"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error(\"Cannot find module '\"+o+\"'\");throw f.code=\"MODULE_NOT_FOUND\",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require==\"function\"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})",
     "'use strict';\n\nvar str = 'console';\nif (str) {\n  let str = 'browser';\n  document.write(`Hello, ${str}!`);\n}\nconsole.log(`Hello, ${str}!`);\n\nimport * as math from \"./lib/math.es6.js\";\nconsole.log(\"2π = \" + math.sum(math.pi, math.pi));\n",
-    "/**\n * lib/math description.\n */\n\n/**\n * Adds two numbers together.\n * @param {int} x The first number.\n * @param {int} y The second number.\n * @return {int} The sum of the two numbers.\n */\nexport function sum(x, y) {\n  return x + y;\n}\n\n/**\n * 円周率\n * @type {Number}\n */\nexport var pi = 3.141593;\n"
+    "/**\n * lib/math description.\n */\n'use strict';\n// const assert = require('assert');\n\n/**\n * Adds two numbers together.\n * @param {number} x The first number.\n * @param {number} y The second number.\n * @return {Number} The sum of the two numbers.\n */\nexport function sum(x, y) {\n  // assert(typeof x === 'number');\n  // assert(typeof y === 'number');\n  return x + y;\n}\n\n/**\n * 円周率\n * @type {Number}\n */\nexport var pi = 3.141593;\n"
   ]
 }
