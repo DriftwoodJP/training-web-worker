@@ -7,7 +7,7 @@
     "start": "parallelshell 'npm run serve' 'npm run build' 'npm run watch'",
     "build": "watchify ./src/basic.es6.js --debug --transform babelify --outfile 'exorcist ./lib/basic.js.map > ./lib/basic.js' --verbose",
     "doc": "esdoc -c .esdoc.json",
-    "lint": "eslint src/**/*.es6.js test/**/*.test.js",
+    "lint": "eslint src/ test/",
     "serve": "serve -p 3000 .",
     "test": "mocha test/**/*.test.js",
     "watch": "watch 'npm run lint && npm run test' src/ test/"
