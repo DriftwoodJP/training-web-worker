@@ -1,5 +1,7 @@
 'use strict';
 
+require('babel-polyfill');
+
 var str = 'console';
 if (str) {
   let str = 'browser';
