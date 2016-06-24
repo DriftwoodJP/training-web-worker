@@ -30,7 +30,7 @@ available via `npm run-script`:
   doc
     esdoc -c .esdoc.json
   lint
-    eslint src/**/*.es6.js test/**/*.test.js
+    eslint src/ test/
   serve
     serve -p 3000 .
   watch
