@@ -1,7 +1,11 @@
+'use strict';
+
 /**
  * lib/math description.
+ * @author DriftwoodJP
+ * @version 1.0.0
  */
-'use strict';
+
 // const assert = require('assert');
 
 /**
@@ -18,6 +22,6 @@ export function sum(x, y) {
 
 /**
  * 円周率
- * @type {Number}
+ * @type {Number} 3.141593
  */
-export var pi = 3.141593;
+export let pi = 3.141593;
