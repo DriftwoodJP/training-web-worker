@@ -6,7 +6,7 @@
  * @version 1.0.0
  */
 
-// const assert = require('assert');
+const assert = require('assert');
 
 /**
  * Adds two numbers together.
@@ -15,8 +15,8 @@
  * @return {Number} The sum of the two numbers.
  */
 export function sum(x, y) {
-  // assert(typeof x === 'number');
-  // assert(typeof y === 'number');
+  assert(typeof x === 'number');
+  assert(typeof y === 'number');
   return x + y;
 }
 
