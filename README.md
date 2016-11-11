@@ -16,7 +16,7 @@
 % npm run
 Lifecycle scripts included in sandbox-es6:
   start
-    parallelshell 'npm run serve' 'npm run build' 'npm run watch'
+    parallelshell 'npm run serve' 'npm run development' 'npm run watch'
   test
     mocha test/**/*.test.js
 
