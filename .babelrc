@@ -5,7 +5,7 @@
   "env": {
     "development": {
       "presets": [
-        "power-assert",
+        "babel-preset-power-assert",
         "jsdoc-to-assert"
       ]
     },
